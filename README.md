@@ -95,27 +95,36 @@ This functionality is key for providing users with accurate and optimized flight
 
 ## 📸 Screenshots
 
-- **Log In Page**
-  ![Screenshot 2024-11-26 203138](https://github.com/user-attachments/assets/19ff6866-af79-4b4e-81b6-20840e9247b9)
-- **Registration Form**
-  ![Screenshot 2024-11-26 203200](https://github.com/user-attachments/assets/49547025-6f51-4c7c-946d-a40c3d300a7a)
-- **Admin Log in and Admin Operations Page**
-![Screenshot 2024-11-26 203724](https://github.com/user-attachments/assets/7463fbf7-ecf7-415f-a627-d7de5df428f8)
-![Screenshot 2024-11-26 203700](https://github.com/user-attachments/assets/fdc8c6cb-22d6-4f84-8a50-fd9d8c0a92ef)
-![Screenshot 2024-11-26 203648](https://github.com/user-attachments/assets/4e8881c6-315f-4d26-bc4e-ff8cee07bbb6)
-![Screenshot 2024-11-26 203638](https://github.com/user-attachments/assets/239d58b1-9cd7-4ecd-afb4-5583cb750f28)
-![Screenshot 2024-11-26 203148](https://github.com/user-attachments/assets/23b7fa9c-1b54-429d-bdeb-2a80d088315a)
-- **Flight Search Page**
-  ![Screenshot 2024-11-26 203216](https://github.com/user-attachments/assets/1d3fd900-daf6-482a-bf1b-655c81662bb0)
-- **Flight Display**
- ![Screenshot 2024-11-26 203251](https://github.com/user-attachments/assets/df8be392-9609-4cf2-8b9b-76907a965240)
-- **Seat Selection**
-  ![Screenshot 2024-11-26 203304](https://github.com/user-attachments/assets/94f260ab-e467-4c19-a73e-61767ff14836)
-- **Passenger Credentials**
-![Screenshot 2024-11-26 203317](https://github.com/user-attachments/assets/18ae50b5-9dc3-400b-9581-af462ada23e8)
-- **Payment Page**
-  ![Screenshot 2024-11-26 203328](https://github.com/user-attachments/assets/9d9a9d71-d3a4-4e09-9885-f460b21c55fd)
-![Screenshot 2024-11-26 203401](https://github.com/user-attachments/assets/8089d484-9a8a-45e5-a211-ca023c02a691)
+- Log In Page
+  ![Login Page](https://github.com/user-attachments/assets/eb501db6-2165-4789-92d0-5ca037d0461f)
+
+- Registration Page
+  ![Registration Page](https://github.com/user-attachments/assets/433dca25-be27-4d58-ba5a-4a5d484365b7)
+
+- Admin Log In and Operations
+  ![Admin Login](https://github.com/user-attachments/assets/8d5d4fb0-4390-4d98-a094-5d94d7744704)
+  ![Admin Page](https://github.com/user-attachments/assets/fbba5b26-a672-496e-b11c-d40f85fad561)
+  ![Add New FLight](https://github.com/user-attachments/assets/3834845d-6a09-4f06-a0fc-e1a7b77cd2a5)
+  ![Modify a Flight](https://github.com/user-attachments/assets/6f4b6183-56cf-4d51-b3db-6127953ce618)
+  ![Delete Flight](https://github.com/user-attachments/assets/afe9acc4-307b-43ed-a267-be7917060d55)
+
+- Flight Search
+  ![Book a flight](https://github.com/user-attachments/assets/f3ecad79-462f-415b-9614-4f92a8152856)
+
+- Flight Display
+  ![Flight Details](https://github.com/user-attachments/assets/8b2da9df-474b-452f-9fdd-9a8e797ecb55)
+
+- Seat Selection
+  ![Seat Selection](https://github.com/user-attachments/assets/cb77f7f0-e3ec-4d6c-b0c0-f1eddae7f420)
+
+- Passenger Credentials
+  ![Pasenger Credentials](https://github.com/user-attachments/assets/2cad0760-4e10-441d-b108-c8314a37fdf0)
+
+- Payment Page
+  ![Payment Details](https://github.com/user-attachments/assets/be3663c7-823b-4042-bdb5-599962be1984)
+  ![Payment Confirmation](https://github.com/user-attachments/assets/eec1ad71-7db5-438a-acfc-57bcd875095d)
+
+
 
 
 ## 📜 License
