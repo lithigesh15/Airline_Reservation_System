@@ -1,0 +1,9 @@
+Account No,Departure,Arrival,departure_date,retrun_date,flight no,path,depart_time,arr_time,duration,price,seat,user id,adult,child,infant
+12345678901234,Chennai,Tuticorin,nan,one-way,531,,07:15,08:15,0:25:00,1444,"['A4', 'A5']",a,1,2,0
+ukyjtr,Chennai,Delhi,Economy,nan,531,,07:15,08:15,0:25:00,1289,"['G3', 'G4']"
+etrysud,Kochi,Chennai,nan,one-way,510,,01:20,16:20,0:10:00,2566,"['C4', 'D3']",a,2,0,0
+rtyuiop,Kochi,Delhi,nan,one-way,510,,04:40,06:35,0:10:00,None,"['G5', 'G6']",a,1,1,0
+ewrty,Kochi,Delhi,nan,one-way,510,,01:20,16:20,0:10:00,1073,"['H4', 'H5']",a,1,1,0
+wd,Tiruchirappalli,Chennai,nan,one-way,7164,,09:10,11:05,0:55:00,1034,"['G2', 'G3', 'G4']",a,1,0,0
+hgjk,Tiruchirappalli,Kochi,2024-11-14,round-trip,1451,"['Tiruchirappalli', 'Bengaluru', 'Kochi']",00:05,01:10,1:20:00,4055,"['G1', 'G2']",aa,2,1,1
+12345678912345,Chennai,Delhi,nan,one-way,531,,09:55,11:05,0:25:00,2405,"['G4', 'G5']",a,2,1,0

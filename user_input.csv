@@ -1,0 +1,50 @@
+Username,Departure,Arrival,Adults,Children,Infants,TicketClass,Departure_Date,Arrival_Date,Trip-Type
+spd,Pondicherry,Kannur,3,2,0,Business,2024-10-11,2024-10-25,round-trip
+a,Chennai,Kanpur,0,3,2,Business,2024-10-25,,one-way
+rahul,Chennai,Kochi,1,2,0,Business,2024-10-18,,one-way
+a,Kochi,Kochi,1,0,0,Economy,2024-10-03,,one-way
+a,Kochi,Chennai,1,0,0,Economy,2024-10-03,2024-10-03,round-trip
+roh,Chennai,Coimbatore,1,1,0,Business,2024-10-03,,one-way
+roh,Chennai,Coimbatore,1,1,0,Business,2024-11-07,,one-way
+roh,Chennai,Coimbatore,1,1,1,Business,2024-11-07,,one-way
+a,Chennai,Bengaluru,1,3,4,Business,2024-10-18,,one-way
+a,Chennai,Bengaluru,3,3,5,Economy,2024-10-08,,one-way
+a,Chennai,Kochi,1,0,0,First Class,2024-10-08,,one-way
+a,Chennai,Madurai,1,0,0,Economy,2024-10-10,,one-way
+a,Chennai,Madurai,1,0,0,Economy,2024-10-10,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-10,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-10,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-11,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-11,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-11,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-11,,one-way
+a,Chennai,Pondicherry,1,0,0,Economy,2024-10-11,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-11,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-13,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-13,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-13,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-13,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-13,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-13,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-13,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-13,,one-way
+a,Chennai,Bengaluru,1,0,0,Economy,2024-10-13,,one-way
+a,Chennai,Tuticorin,1,2,0,First Class,2024-10-31,,one-way
+a,Tiruchirappalli,Delhi,2,2,0,First Class,2024-11-04,,one-way
+a,Chennai,Coimbatore,3,0,0,First Class,2024-11-07,,one-way
+a,Kochi,Thiruvananthapuram,2,0,0,First Class,2024-11-08,,one-way
+a,Hyderabad,Kannur,3,0,1,Business,2024-11-08,,one-way
+a,Hyderabad,Kannur,3,0,1,Business,2024-11-08,,one-way
+rajithcce,Kochi,Chandigarh,2,2,0,Economy,2024-11-05,2024-11-07,round-trip
+rajithcce,Kochi,Chennai,2,2,0,Economy,2024-11-05,,one-way
+rajithcce,Kochi,Silchar,2,2,2,Economy,2024-11-05,,one-way
+a,Mumbai,Vijayawada,2,5,0,Economy,2024-11-07,,one-way
+a,Kochi,Delhi,3,1,0,Business,2024-11-08,,one-way
+a,Delhi,Hyderabad,1,0,0,Economy,2024-11-05,,one-way
+a,Chennai,Delhi,2,0,0,Economy,2024-11-22,,one-way
+a,Kochi,Chennai,2,0,0,Economy,2024-11-21,,one-way
+a,Kochi,Delhi,1,1,0,Economy,2024-11-07,,one-way
+a,Kochi,Silchar,1,0,0,Economy,2024-11-05,,one-way
+a,Tiruchirappalli,Chennai,1,0,0,Economy,2024-11-05,,one-way
+aa,Tiruchirappalli,Kochi,2,1,1,Economy,2024-11-07,2024-11-14,round-trip
+a,Chennai,Delhi,2,1,0,Economy,2024-11-21,,one-way
