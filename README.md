@@ -54,8 +54,8 @@ Make sure you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/AirlineTicketReservationSystem.git
-   cd AirlineTicketReservationSystem
+   git clone https://github.com/yourusername/Airline_Reservation_system.git
+   cd Airline_Reservation_system
    ```
 
 2. **Install Dependencies**:
@@ -65,7 +65,7 @@ Make sure you have the following installed:
 
 3. **Run the Application**:
    ```bash
-   python main.py
+   python Airline_management_system.py
    ```
 
 ## 🚀 Usage
@@ -77,6 +77,9 @@ Make sure you have the following installed:
 5. **View Bookings** - Access your booking history anytime.
 
 ## 📊 Analysis and Algorithms
+
+![WhatsApp Image 2024-11-04 at 21 30 37_b81febb5](https://github.com/user-attachments/assets/703530fc-787b-4176-8f49-a757078fb77c)
+
 
 ### 🔀 Dijkstra Algorithm for Flight Routes
 
