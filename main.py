@@ -1,7 +1,4 @@
-#line 282 - after login siccessful, do next
 
-#from msvcrt import locking
-#from tkinter import ttk
 import customtkinter as ctk
 import tkinter.messagebox as tkmb
 from typing import Union, Callable
@@ -9,9 +6,8 @@ from tkcalendar import DateEntry
 import tkinter as tk
 import pandas as pd
 import numpy as np
+from tkinter import ttk, Scrollbar, Canvas
 import os
-#import time
-#import csv
 
 #custom libraries
 import flights_display
@@ -80,6 +76,8 @@ class AirlineManagementSystem:
         self.num_adults = 1
         self.num_children = 0
         self.num_infants = 0
+
+        self.user=""
 
         self.num_adults_ow = 1
         self.num_children_ow = 0
@@ -339,7 +337,7 @@ class AirlineManagementSystem:
             tkmb.showerror(title="Error", message="Password must be 8 characters long")
         elif new_password != re_password:
             tkmb.showerror(title="Error", message="Passwords do not match")
-        elif int(age)<=18:
+        elif int(age)<18:
             tkmb.showerror(title="Error", message="Age must be minimum 18")
         elif self._check_username_exists(new_username):
             tkmb.showerror(title="Error", message="Username already exsists")
@@ -400,6 +398,7 @@ class AirlineManagementSystem:
         if self._verify_credentials(username, password):
             tkmb.showinfo(title="Login Successful", message="You have logged in successfully")
             self.booking_details[0] = username
+            self.user = username
             self.app.withdraw()
             self.open_dashboard()
         else:
@@ -445,12 +444,88 @@ class AirlineManagementSystem:
         tab_view.add("One-Way")
         tab_view.add("Round-Trip")
 
+        # Load the CSV file at the beginning or in the relevant function
+        file_path = 'booking_info.csv'
+        booking_data = pd.read_csv(file_path)
+
+
+        def open_booking_window(dashboard):
+            dashboard.withdraw()  # Hide the dashboard window
+
+
+            booking_window = ctk.CTkToplevel(dashboard)
+            booking_window.title("Booking")
+            booking_window.geometry("500x500")
+            #booking_window.resizable(0, 0)
+
+            # Filter the data based on user ID
+            matched_data = booking_data[booking_data['user id'] == self.user]
+
+            if not matched_data.empty:
+                # Create a canvas for scrollable content
+                canvas = Canvas(booking_window, bg="#1c1c1c")  # Dark background
+                scroll_y = Scrollbar(booking_window, orient="vertical", command=canvas.yview)
+                scrollable_frame = ctk.CTkFrame(canvas, fg_color="#1c1c1c")
+
+                scrollable_frame.bind(
+                    "<Configure>",
+                    lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+                )
+
+                canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+                canvas.configure(yscrollcommand=scroll_y.set)
+
+                # Display all booking details in styled frames
+                for i, (index, row) in enumerate(matched_data.iterrows()):
+                    bg_color = "#2b2b2b" if i % 2 == 0 else "#3e3e3e"  # Alternating background colors
+                    booking_frame = ctk.CTkFrame(
+                        scrollable_frame, corner_radius=15, fg_color=bg_color, border_width=1, border_color="#555"
+                    )
+                    booking_frame.pack(pady=15, padx=15, fill="both", expand=True)
+
+                    # Title with improved styling
+                    booking_title = ctk.CTkLabel(
+                        booking_frame, text=f"Booking {i + 1}", font=("Arial", 18, "bold"), text_color="#00bfff"
+                    )
+                    booking_title.pack(pady=(10, 5), anchor="center")
+
+                    # Display each detail with updated styling
+                    for col, value in row.items():
+                        detail_text = f"{col.replace('_', ' ').title()}: {value if pd.notna(value) else 'N/A'}"
+                        detail_label = ctk.CTkLabel(
+                            booking_frame, text=detail_text, font=("Arial", 13), text_color="#ffffff", anchor="w", justify="left"
+                        )
+                        detail_label.pack(anchor="w", padx=15, pady=2)
+
+                canvas.pack(side="left", fill="both", expand=True, padx=10, pady=10)
+                scroll_y.pack(side="right", fill="y")
+            else:
+                no_data_label = ctk.CTkLabel(
+                    booking_window, text="No data found for this user.",
+                    font=("Arial", 16, "bold"), text_color="#ff0000"
+                )
+                no_data_label.pack(pady=20)
+
+            # Enhanced Back button
+            back_button = ctk.CTkButton(
+                booking_window, text="Back", text_color="#ffffff", font=("Arial", 14, "bold"),
+                fg_color="#ff3333", hover_color="#cc0000", cursor="hand2",
+                command=lambda: (booking_window.withdraw(), dashboard.deiconify())
+            )
+            back_button.pack(pady=10, side="bottom")
+
+
+
         # Logout button
         logout_button = ctk.CTkButton(self.dashboard, text="Logout", text_color="cyan", font=("Arial", 17), 
-                                    fg_color="transparent", hover_color="lightgray", cursor="hand2", 
+                                    fg_color="red", hover_color="dark red", cursor="hand2", 
                                     command=logout)
         logout_button.place(x=880, y=10, anchor="ne")
 
+        booking_button = ctk.CTkButton(self.dashboard, text="Bookings", text_color="cyan", font=("Arial", 17), 
+                                    fg_color="transparent", hover_color="cyan", cursor="hand2", 
+                                    command=lambda: open_booking_window(self.dashboard))
+        booking_button.place(x=170, y=10, anchor="ne")
 
         df = pd.read_csv(r"DSA_project_flight_reservation.csv") 
         df.dropna(subset=['origin','destination'])       
@@ -936,7 +1011,7 @@ class AirlineManagementSystem:
             self.loading()
     
     def loading(self):
-        self.dashboard.destroy()
+        self.dashboard.withdraw()
 
         # Create the splash screen window
         splash_root = ctk.CTk()
@@ -960,6 +1035,7 @@ class AirlineManagementSystem:
             else:
                 splash_root.destroy()  # Close the splash screen
                 flights_display.FlightDisplayApp()  # Open the main application window
+                self.dashboard.deiconify()
 
         # Start updating the progress after 100ms
         splash_root.after(100, update_progress)
