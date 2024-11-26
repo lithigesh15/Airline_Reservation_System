@@ -1,4 +1,4 @@
-![Screenshot 2024-11-26 203304](https://github.com/user-attachments/assets/a7e30ac9-378f-46ac-b64f-1d0099e5010a)![image](https://github.com/user-attachments/assets/6ebea9fb-30e7-46cd-a188-96050323fc23)# ✈️ Airline Ticket Reservation System 📋
+✈️ Airline Ticket Reservation System 📋
 
 Welcome to the **Airline Ticket Reservation System** project! This project is a comprehensive implementation of a flight booking system using Python with a GUI designed in **CustomTkinter**. It also incorporates CSV files for data storage, using **Pandas** for data manipulation and retrieval. This README will guide you through the setup, features, and the technical aspects of the project. 
 
