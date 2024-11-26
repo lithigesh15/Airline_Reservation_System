@@ -70,25 +70,25 @@ Make sure you have the following installed:
 
 ## 🚀 Usage
 
-## 1. User Registration
+### 1. User Registration
 Sign up for a new account or log in using existing credentials. This allows users to access flight search, booking, and other features.
 
-## 2. Admin Log In and Flight Management
+### 2. Admin Log In and Flight Management
 Admins can log in with special credentials to manage the flight database. Admin capabilities include:
 - **Add a Flight**: Input flight details to add a new flight to the system.
 - **Delete a Flight**: Remove a flight from the database if it is no longer available.
 - **Modify a Flight**: Update flight details such as schedule, price, or available seats.
 
-## 3. Flight Search
+### 3. Flight Search
 Enter departure location, destination, travel date, and other necessary details to find available flights.
 
-## 4. Booking
+### 4. Booking
 Choose a preferred flight, select seats, and enter passenger information to complete the reservation.
 
-## 5. Payment
+### 5. Payment
 Complete the booking by proceeding through a mock payment interface. Review the booking summary and confirm payment.
 
-## 6. View Bookings
+### 6. View Bookings
 Access and manage your booking history at any time. This section provides a summary of all past and current reservations.
 
 
